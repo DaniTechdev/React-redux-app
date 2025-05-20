@@ -1,0 +1,78 @@
+
+
+
+Redux encourages time travel debugging of state meaning restoration 
+of previous done action and then restoration of all
+states to be in sync with that action as they 
+were before the action.
+
+Redux has redux dev tools just like chrome dev tool, where
+we can be able to inspect our redux states,
+store, actions etc.
+
+
+Log rocket
+
+Redux holds state even though we navigate to other pages and come back
+
+
+pres 
+
+predictable state changes
+centralised state
+easy debugging
+preserve page state
+undo/redo
+ecosystemcof add-on
+
+cons
+complexity of functional 
+Verbosity (more codes to get things done)
+
+
+Is redux for me?
+
+When not to use Redux
+
+Tight budget
+small to medium-size apps
+simple ui/data flow
+static data
+
+
+if all you have is a hammer everything looks
+like a nail!  
+Know when to use Redux
+
+
+Be an active problem solver
+
+
+Setting ups
+Install React
+
+
+In this course, we will learn
+
+functional programming 
+fundamentals of Redux
+build redux from scratch
+debugging
+
+
+redux store
+middleware
+calling APIs
+testing redux apps
+integrating with react
+
+
+Progamming Paradigms
+
+functional
+object-oriented
+procedural 
+event-driven
+
+
+In javascript, functions are first class citizen
