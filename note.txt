@@ -1,0 +1,26 @@
+
+
+
+Redux encourages time travel debugging of state meaning restoration 
+of previous done action and then restoration of all
+states to be in sync with that action as they 
+were before the action.
+
+Redux has redux dev tools just like chrome dev tool, where
+we can be able to inspect our redux states,
+store, actions etc.
+
+
+Log rocket
+
+Redux holds state even though we navigate to other pages and come back
+
+
+pres 
+
+predictable state changes
+centralised state
+easy debugging
+preserve page state
+undo/redo
+
