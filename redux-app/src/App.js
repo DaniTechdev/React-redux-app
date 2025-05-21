@@ -1,5 +1,6 @@
 import "./App.css";
 import store from "./store.js";
+import * as actionCreator from "./actionsCreator.js";
 
 function App() {
   //Redux Architecture
@@ -10,21 +11,12 @@ function App() {
     console.log("Store changed", store.getState());
   });
 
-  store.dispatch({
-    type: "bugAdded",
-    payload: {
-      description: "Bug5",
-    },
-  });
+  store.dispatch(actionCreator.bugAdded("Bug 1"));
+  store.dispatch(actionCreator.resolvedBug(1));
 
   unsubscribe();
 
-  store.dispatch({
-    type: "bugRemoved",
-    payload: {
-      id: 1,
-    },
-  });
+  store.dispatch(actionCreator.removeBug(1));
 
   // unsubscribe();
 
