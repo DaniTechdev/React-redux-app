@@ -219,13 +219,28 @@ console.log("updated3", updated3);
 //immer
 //mori
 
+// let book = Map({ title: "Harry Potter" });
+
+// function publish(book) {
+//   return book.set("isPublished", true);
+// }
+
+// book = publish(book);
+
+// // console.log("book", book);
+// console.log("book.toJS()", book.toJS());
+
 let book = Map({ title: "Harry Potter" });
 
 function publish(book) {
-  return book.set("isPublished", true);
+  return produce(book, (draftBook) => {
+    draftBook.isPublished = true;
+  });
 }
 
-book = publish(book);
+let updatedBook = publish(book);
 
 // console.log("book", book);
-console.log("book.toJS()", book.toJS());
+// console.log("book.toJS()", book.toJS);
+
+console.log("updatedBook", updatedBook);
